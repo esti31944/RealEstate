@@ -1,0 +1,81 @@
+/* about.css */
+.card {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    flex: 1 1 280px;
+    max-width: 300px;
+}
+
+.card-photo {
+    width: 100%;
+    height: 40%;
+    display: block;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #0077cc;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-btn:hover {
+    background: #005fa3;
+}
+
+.info_img{
+    display: flex;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .info_img {
+        flex-direction: column; /* במסכים קטנים הם אחד מתחת לשני */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* תופס כמעט את כל הרוחב במסך צר */
+        max-width: none;
+    }
+}

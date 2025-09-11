@@ -1,0 +1,171 @@
+/* footer.css */
+.footer {
+    background-color: #2D3343;
+    color: #CBA88C;
+    padding: 40px 0 20px 0;
+    margin-top: 50px;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 3px solid #b8b7bd; /* גבול עליון בצבע הניווט */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section {
+    text-align: left;
+    direction: ltr;
+}
+
+.footer-section h3 {
+    color: #CBA88C;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #CBA88C;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #fcfbf6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #CBA88C;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: #E3CBB7;
+    transform: translateX(-5px);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    background-color: transparent;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+    font-size: 20px;
+    color: #CBA88C;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+
+    color: #fcfbf6;
+    transform: translateY(-3px);
+}
+
+.developer-info {
+    text-align: center;
+    background-color: rgba(177, 182, 189, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.developer-info .developer-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d1bab0;
+    margin-bottom: 5px;
+}
+
+.developer-info .developer-title {
+    font-size: 0.9em;
+    color: #C2A387;
+    font-style: italic;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #b8b7bd;
+    color: #cfc4c0;
+    font-size: 0.9em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: #d1bab0;
+    flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 30px 0 15px 0;
+    }
+    
+    .footer-container {
+        gap: 20px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}

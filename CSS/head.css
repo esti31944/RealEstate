@@ -1,0 +1,35 @@
+/* head.css */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI';
+    background-color: #fcfbf6;
+}
+
+
+#logoDiv img {
+    height: 100px;
+    padding: 10px;
+
+    transition: all 0.4s ease;
+}
+
+#logoDiv img:hover {
+    filter: drop-shadow(0 0 15px #C2A387); /* זוהר בצבע שלך */
+}
+
+.head {
+    background: #2D3343;
+}
+
+.NavIcon img {
+    width: 30px;
+}
+
+.main1 {
+    text-align: center;
+    margin: 10px;
+}
+

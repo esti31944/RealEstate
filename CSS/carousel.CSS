@@ -1,0 +1,15 @@
+ 
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-indicators , .carousel-caption
+  {
+    z-index: 4;
+  }
+
+  .carousel-item img{
+    border-radius: 50px;
+  }
